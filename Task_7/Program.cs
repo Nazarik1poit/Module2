@@ -1,4 +1,11 @@
-﻿class Test
+﻿Console.WriteLine("Инициализация по умолчанию:");
+Test test1 = new Test();
+test1.Print();
+Console.WriteLine("Инициализация с параметрами:");
+Test test2 = new Test(6, "stringInput");
+test2.Print();
+
+class Test
 {
     int test1;
     string test2;
