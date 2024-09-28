@@ -5,6 +5,7 @@ Console.WriteLine("Инициализация с параметрами:");
 Test test2 = new Test(6, "stringInput");
 test2.Print();
 
+
 class Test
 {
     int test1;
@@ -25,5 +26,10 @@ class Test
     public void Print()
     {
         Console.WriteLine($"параметр 1 = {this.test1}, параметр 2 = {this.test2}");
+    }
+
+    ~Test()
+    {
+        Console.WriteLine($"Объект {this.test2} уничтожен");
     }
 }
